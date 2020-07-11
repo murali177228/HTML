@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(14, 233, 98);
+  background-image: url(NikkiSpecs.jpg);
+  background-size:  500px 500px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+  color:red;
+}
+div{
+background-color: #cccc99;
+}
+
+#content{
+background-color: #ccff00;
+width:200px;
+}
+
+.divclass{
+background-color: #ccffff;
+}

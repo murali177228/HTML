@@ -1,0 +1,59 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+<title>Welcome</title>
+<h1 align="center">WELCOME TO BH</h1>
+</head>
+<body>
+
+
+<table >
+<tr>
+<td>User name : </td><td><input type='text' id='txtUname'></td>
+</tr>
+<tr>
+<td>Password : </td><td><input type='text' id='txtPwd'></td>
+</tr>
+<tr>
+<td><button type='buttone' value='Login'>Login</button></td><td><button type='buttone' value='close'>Close</button></td>
+</tr>
+</table>
+
+<hr>
+
+<p id='demo'>You will see output here</p>
+<script>
+function add(){
+var a,b, c;
+a = 10;
+b = 20;
+c = a + b;
+document.getElementById('demo').innerHTML = c;
+}
+</script>
+<button type='button' onclick="add()">Click to get addition value</button>
+<hr>
+
+<table >
+<tr>
+<td>Enter 'a' value : </td><td><input type='text' id='txt1st'></td>
+</tr>
+<tr>
+<td>Enter 'b' value : </td><td><input type='text' id='txt2nd'></td>
+</tr>
+<tr>
+<td><button type='button' onclick="addition()" value='Add'>Addition</button></td><td><button type='buttone' value='Subtract'>Subtract</button></td>
+</tr>
+</table>
+<p id='result'>You will see output here</p>
+<script>
+function addition(a,b){
+var c;
+
+c = a + b;
+return c;
+document.getElementById("demo").innerHTML = addition(4, 3);
+}
+</script>
+</body>
+</html>
