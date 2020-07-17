@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>JavaScript Practice</title>
+        <script>
+            function myFunction(){
+                document.getElementById("demo").innerHTML = "Paragraph changed."; 
+            }
+        </script>
+    </head>
+    <body>
+        <p id= "demo">Before change the content</p>
+        <!-- <script>
+            var chngText = document.getElementById('demo').innerHTML="Changed text";
+        </script> -->
+
+        <!-- Bulb On/Off code -->
+        <button onclick="document.getElementById('demo').innerHTML='Changed text'"> Click here </button> to change the text
+        <br>
+        
+
+        <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn On the bulb</button>
+
+        <img id="myImage" src="pic_bulboff.gif" alt="Bulb is in off state">
+
+        <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn Off the bulb</button>
+        <br>
+        <!-- Java script can change the style of an HTML elements-->
+
+        <p id="test">This is previous change text with default size</p>
+        
+        <button type="button" onclick="document.getElementById('test').style.fontSize='50px'">Click here to change font size</button><br>
+        <button type="button" onclick="document.getElementById('test').style.color='red'">Click here to change font Color</button><br>
+        <hr>
+        
+        <button onclick="document.getElementById('hide').style.display='none'"> Hide above text</button><br>
+        
+        <p id="hide">JavaScript Can Hide HTML Elements</p>
+        <button onclick="document.getElementById('hide').style.display='block'"> Show hidden text</button><br>
+        <hr>
+        <!-- This code is to call JavaScript code from internal script -->
+        <button onclick="myFunction()"> Click here</button> to change the 1st Paragraph text
+        
+    </body>
+</html>
